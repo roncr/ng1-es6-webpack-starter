@@ -56,9 +56,14 @@ Run production mode:
 
 More Webpack loaders: https://webpack.github.io/docs/list-of-loaders.html
 
+#### ESLint
+
+Some other ESLint config files:
+* [ESLint Standard](https://github.com/feross/eslint-config-standard)
+* [Google](https://github.com/sindresorhus/eslint-config-xo)
+
 ##### TODO
 * component generation
-* add more unit testing
 * end to end testing
 * add more linting rules
 * compare why browser-sync + webpack-dev-middleware + webpack-hot-middleware vs webpack-dev-server
