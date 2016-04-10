@@ -1,3 +1,12 @@
 parser: 'babel-eslint'
+extends: 'standard'
+plugins: ['standard']
+env:
+  browser: true,
+  es6: true
 rules:
-  quotes: [2, 'single']
+  indent: ['error', 4]
+  quotes: ['error', 'single']
+  semi: ['error', 'always']
+  space-before-function-paren: [0]
+  eol-last: [0]
