@@ -37,7 +37,7 @@ Run production mode:
 * ng-annotate-loader - To auto-generate bracket notation.
 * babel-loader - Run babel with webpack.
 * raw-loader - Loads HTML into Webpack.
-* style-loader - Transforms the CSS into <style> tag.
+* style-loader - Transforms the CSS into `<style>` tag.
 * css-loader - Processes URLs, fonts and other resources.
 * sass-loader - Compiles SASS with Webpack.
 * file-loader - Emits the file into the output folder and returns the (relative) url. (Used for images handling).
