@@ -45,12 +45,20 @@ Run production mode:
 * eslint - JS Linter.
 * eslint-loader - ESLint with Webpack.
 * babel-eslint - ESLint using Babel as the parser.
+* jasmine-core - Unit Testing
+* karma - Tets runner
+* karma-jasmine - Karma - Jasmine integration
+* karma-phantomjs-launcher - PhantomJS Launcher
+* phantomjs-prebuilt - PhantomJS
+* karma-mochar-reporter - Mocha reporter
+* karma-webpack - Webpack with karma
+* karma-sourcemap-loader - Karma plugin that locates and loads existing javascript source map files.
 
 More Webpack loaders: https://webpack.github.io/docs/list-of-loaders.html
 
 ##### TODO
 * component generation
-* unit testing
+* add more unit testing
 * end to end testing
 * add more linting rules
 * compare why browser-sync + webpack-dev-middleware + webpack-hot-middleware vs webpack-dev-server
