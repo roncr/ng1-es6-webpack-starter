@@ -16,11 +16,11 @@ Starter project for an AngularJS application using Babel and Webpack.
 ## Tasks
 Run development mode, supports watch and hot reload:
 
-    gulp
+    npm start
 
 Run production mode:
 
-    gulp prod
+    npm run prod
 
 
 
@@ -65,7 +65,6 @@ Some other ESLint config files:
 ##### TODO
 * component generation
 * end to end testing
-* add more linting rules
 * compare why browser-sync + webpack-dev-middleware + webpack-hot-middleware vs webpack-dev-server
 
 ## Credits
