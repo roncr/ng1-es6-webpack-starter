@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
+    "prod": "gulp prod",
     "test": "karma start"
   },
   "author": "",
