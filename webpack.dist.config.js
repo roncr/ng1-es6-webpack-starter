@@ -6,7 +6,8 @@ config.debug = false;
 config.devtool = false;
 config.output = {
     filename: '[name].bundle.js',
-    publicPath: ''
+    publicPath: '',
+    path: path.resolve(__dirname, 'dist')
 };
 
 config.plugins = config.plugins.concat([
