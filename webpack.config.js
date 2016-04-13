@@ -15,8 +15,9 @@ module.exports = {
             { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loaders: ['ng-annotate','babel'] },
             { test: /\.html$/, loader: 'raw' },
             { test: /\.scss$/, loaders: ['style','css','sass'] },
-            { test: /\.css$/, loader: ['style','css'] },
-            { test: /\.(png|gif|jpe?g|svg)$/i, loader: 'url', query: { limit: 10000 } }
+            { test: /\.css$/, loaders: ['style','css'] },
+            { test: /\.(png|gif|jpe?g|svg)$/i, loader: 'url', query: { limit: 10000 } },
+            { test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/, loader: 'file', query: { name: 'fonts/[name][hash].[ext]'} }
         ]
     },
     plugins: [
