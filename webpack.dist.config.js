@@ -1,16 +1,23 @@
 var webpack = require('webpack');
 var path    = require('path');
 var config  = require('./webpack.config');
+var CleanPlugin = require('clean-webpack-plugin');
+
+var distFolder = 'dist';
 
 config.debug = false;
 config.devtool = false;
 config.output = {
     filename: '[name].bundle.js',
     publicPath: '',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, distFolder)
 };
 
 config.plugins = config.plugins.concat([
+
+    // Cleanup the builds/ folder before
+    // compiling our final assets
+    new CleanPlugin(distFolder),
 
     // This plugin looks for similar chunks and files
     // and merges them for better caching by the user

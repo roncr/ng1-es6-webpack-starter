@@ -17,15 +17,13 @@ let config = {
     root: 'src',
     app: 'app',
     components: 'app/components',
-    main: 'app.js',
-    output: 'dist'
+    main: 'app.js'
 };
 
 // **************************************
 // Paths Map
 let paths = {
-    entry: path.join(__dirname, config.root, config.app, config.main),
-    output: path.join(__dirname, config.output)
+    entry: path.join(__dirname, config.root, config.app, config.main)
 };
 
 
@@ -36,7 +34,6 @@ let paths = {
 gulp.task('prod', (cb) => {
     const webpackConfig = require('./webpack.dist.config');
     webpackConfig.entry.app = paths.entry;
-    webpackConfig.output.path = paths.output;
 
     webpack(webpackConfig, (err, stats) => {
         if(err)  {
