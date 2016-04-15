@@ -64,6 +64,7 @@ Some other ESLint config files:
 
 ##### TODO
 * component generation
+* generate documentation
 * end to end testing
 * compare why browser-sync + webpack-dev-middleware + webpack-hot-middleware vs webpack-dev-server
 
