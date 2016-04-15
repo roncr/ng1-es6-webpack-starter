@@ -62,6 +62,10 @@ Some other ESLint config files:
 * [ESLint Standard](https://github.com/feross/eslint-config-standard)
 * [Google](https://github.com/sindresorhus/eslint-config-xo)
 
+#### More
+
+For more visit the [wiki](https://github.com/roncr/ng1-es6-webpack-starter/wiki).
+
 ##### TODO
 * component generation
 * generate documentation
