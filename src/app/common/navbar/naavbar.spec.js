@@ -16,7 +16,7 @@ describe('NavbarComponent', () => {
         // controller specs
         it('has a name property', () => { // erase if removing this.name from the controller
             let controller = makeController();
-            expect(controller.name).not.toBeUndefined();;
+            expect(controller.name).not.toBeUndefined();
         });
     });
 

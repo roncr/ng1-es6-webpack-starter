@@ -3,7 +3,7 @@
 .idea
 
 /* Logs */
-*.logs
+*.log
 
 /* Auto-generated */
 node_modules
