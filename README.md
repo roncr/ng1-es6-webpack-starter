@@ -29,14 +29,14 @@ Generate components ([More details](#generating-components)):
 ## Generating components
 New components can be auto-generated to simplify and speed up the development process. To do so, you must use:
 
-    gulp component --name name [--path path] [--force]
+    gulp component --name name [--path path] [-force]
 
 This command will generate a component an all its minimal files at `src/app/components`, the command uses this parameters:
 * *name*: component name, remember to use camelCase
-* *path*: (Optional) provide a different app relative to the working directory, for instance in order to create a common component, you must use `--path src/app/common`
-* *force* (Optional) if a filter with the same `name` already exists an error is thrown, the `force` parameter creates the component overwriting the existing files.
+* *path*: (Optional) provide a different path relative to the working directory, for instance in order to create a common component, you must use `--path src/app/common`
+* *force* (Optional) if a folder with the same `name` already exists an error is thrown, the `force` parameter creates the component overwriting the existing files.
 
-The generated component will have the following structure
+The generated component will have the following structure:
 
     componentName/
         componentName.component.js
