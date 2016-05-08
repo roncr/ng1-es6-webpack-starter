@@ -22,6 +22,39 @@ Run production mode:
 
     npm run prod
 
+Generate components ([More details](#generating-components)):
+
+    gulp component --name <component name>
+
+## Generating components
+New components can be auto-generated to simplify and speed up the development process. To do so, you must use:
+
+    gulp component --name name [--path path] [--force]
+
+This command will generate a component an all its minimal files at `src/app/components`, the command uses this parameters:
+* *name*: component name, remember to use camelCase
+* *path*: (Optional) provide a different app relative to the working directory, for instance in order to create a common component, you must use `--path src/app/common`
+* *force* (Optional) if a filter with the same `name` already exists an error is thrown, the `force` parameter creates the component overwriting the existing files.
+
+The generated component will have the following structure
+
+    componentName/
+        componentName.component.js
+        componentName.controller.js
+        componentName.html
+        componentName.js
+        componentName.scss
+        componentName.spec.js
+
+## ESLint
+
+Some other ESLint config files:
+* [ESLint Standard](https://github.com/feross/eslint-config-standard)
+* [Google](https://github.com/sindresorhus/eslint-config-xo)
+
+## More
+
+For more visit the [wiki](https://github.com/roncr/ng1-es6-webpack-starter/wiki).
 
 
 #### Dependencies
@@ -53,24 +86,15 @@ Run production mode:
 * karma-mochar-reporter - Mocha reporter
 * karma-webpack - Webpack with karma
 * karma-sourcemap-loader - Karma plugin that locates and loads existing javascript source map files.
+* chalk - Print console messages with colors
+* gulp-template - Replace strings in a template
+* gulp-rename - Rename files.
 
 More Webpack loaders: https://webpack.github.io/docs/list-of-loaders.html
 
-#### ESLint
-
-Some other ESLint config files:
-* [ESLint Standard](https://github.com/feross/eslint-config-standard)
-* [Google](https://github.com/sindresorhus/eslint-config-xo)
-
-#### More
-
-For more visit the [wiki](https://github.com/roncr/ng1-es6-webpack-starter/wiki).
-
 ##### TODO
-* component generation
 * generate documentation
 * end to end testing
-* compare why browser-sync + webpack-dev-middleware + webpack-hot-middleware vs webpack-dev-server
 
 ## Credits
 
